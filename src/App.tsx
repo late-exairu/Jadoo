@@ -1,34 +1,9 @@
-import Logo from "./Logo";
+import Header from "@/components/Header";
 
 function App() {
   return (
     <>
-      <header className="flex static top-0 left-0 w-full px-8 py-6 justify-between items-center">
-        <Logo />
-
-        <div className="flex">
-          <nav>
-            <ul className="text-[17px] font-medium flex gap-8">
-              <li>
-                <a href="">Destinations</a>
-                <a href="">Hotels</a>
-                <a href="">Flights</a>
-                <a href="">Bookings</a>
-                <a href="">Login</a>
-              </li>
-            </ul>
-          </nav>
-          <a href="" className="">
-            Sign Up
-          </a>
-          <select name="language" id="">
-            <option value="en">EN</option>
-            <option value="es">ES</option>
-            <option value="fr">FR</option>
-          </select>
-        </div>
-      </header>
-
+      <Header />
       <main>
         <section>
           <p className="">Best Destinations around the world</p>
