@@ -1,15 +1,57 @@
+@layer theme, base, components, utilities;
 @import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  /* Custom Colors */
+  --color-orange: #df6951;
+  --color-yellow: #f1a501;
+
+  --color-text-dark: #181e4b;
+  --color-text: #5e6282;
+
+  /* Custom Font Families */
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Volkhov", serif;
+
+  --breakpoint-sm: 40rem; /* 640px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 64rem; /* 1024px */
+  --breakpoint-xl: 80rem; /* 1280px */
+  --breakpoint-2xl: 96rem; /* 1536px */
+}
+
+@utility container {
+  padding-inline: 1rem;
+  margin-inline: auto;
+  max-width: 1240px;
+  padding-inline: 20px;
+
+  @variant sm {
+  }
+
+  @variant lg {
+    padding-inline: 2.5rem;
+    max-width: calc(var(--breakpoint-lg) + 2.5rem * 2);
+  }
+
+  @variant xl {
+    max-width: 1240px;
+    padding-inline: 2.5rem;
+  }
+}
 
 :root {
-  font-family: "Google Sans", monospace;
+  font-family: var(--font-sans);
+  font-size: 16px;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.5;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  line-height: 1.36;
+  color: var(--color-text-dark);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,12 +60,8 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 body {
@@ -31,11 +69,6 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -57,15 +90,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button {
+  background-color: #f9f9f9;
 }
