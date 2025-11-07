@@ -10,13 +10,13 @@ export default function Hero() {
     <section>
       <div className="absolute left-[-420px] top-[-60px] size-[480px] rounded-full bg-[#D5AEE4] blur-[150px]" />
       <Container className="relative mt-10 flex min-h-svh items-center py-20">
-        <div className="absolute -top-10 left-1/2 h-[736px] w-[1327px] bg-[url('/public/cloud.svg')] bg-no-repeat" />
+        <div className="absolute -top-10 left-1/2 h-[736px] w-[1327px] bg-[url('/cloud.svg')] bg-no-repeat" />
         <div className="relative z-10 mx-auto max-w-[380px] text-center md:m-0 md:max-w-[420px] md:text-left lg:max-w-[480px] xl:max-w-[560px]">
           <h1 className="text-orange mb-6 text-sm font-bold uppercase md:text-[20px]">
             {hero.title}
           </h1>
           <h2
-            className="text-text-dark mb-6 font-serif text-5xl leading-[1.06] tracking-[-0.04em] md:text-6xl lg:mb-8 lg:text-7xl xl:text-[84px]"
+            className="text-text-dark [&>span]:after:-translate-x-3/7 mb-6 font-serif text-5xl leading-[1.06] tracking-[-0.04em] md:text-6xl lg:mb-8 lg:text-7xl xl:text-[84px] [&>span]:relative [&>span]:z-10 [&>span]:after:absolute [&>span]:after:bottom-[15%] [&>span]:after:left-1/2 [&>span]:after:-z-10 [&>span]:after:h-[12%] [&>span]:after:w-[140%] [&>span]:after:bg-[url('/underline.svg')] [&>span]:after:bg-center [&>span]:after:bg-no-repeat [&>span]:after:content-['']"
             dangerouslySetInnerHTML={{ __html: hero.subtitle }}
           />
           <p className="mb-8 max-w-lg text-sm leading-loose text-gray-700 lg:text-base">
