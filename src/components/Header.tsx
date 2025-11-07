@@ -1,31 +1,44 @@
 import Logo from "@/components/Logo";
+import Container from "@/components/Container";
+import { useNavigation } from "@/hooks/useData";
 
 export default function Header() {
+  const navigation = useNavigation();
   return (
-    <header className="flex static top-0 left-0 w-full py-12">
-      <div className="px-8 max-w-[1240px] w-full mx-auto flex justify-between items-center">
-        <Logo className="w-[115px] h-[34px] my-[3px]" />
+    <header className="fixed left-0 top-0 z-50 flex w-full py-12">
+      <Container className="flex items-center justify-between">
+        <Logo className="my-[3px] h-[34px] w-[115px]" />
 
         <div className="flex">
           <nav>
-            <ul className="text-[17px] font-medium flex gap-8">
-              <li>
-                <a href="" className="px-2 flex items-center h-10">
-                  Destinations
-                </a>
-              </li>
+            <ul className="flex gap-8 text-[17px] font-medium">
+              {navigation.main.map(item => (
+                <li key={item.id}>
+                  <a
+                    href={item.href}
+                    className="text-text-dark hover:text-orange flex h-10 items-center px-2 leading-tight transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
-          <a href="" className="">
-            Sign Up
+          <a
+            href=""
+            className="text-text-dark hover:text-orange flex h-10 items-center px-2 transition-colors"
+          >
+            {navigation.buttons.signUp}
           </a>
           <select name="language" id="">
-            <option value="en">EN</option>
-            <option value="es">ES</option>
-            <option value="fr">FR</option>
+            {navigation.languages.map(option => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
           </select>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }

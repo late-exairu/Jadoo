@@ -1,0 +1,282 @@
+{
+  "site": {
+    "name": "Jadoo",
+    "tagline": "Book your trip in minute, get full Control for much longer.",
+    "description": "Travel, enjoy and live a new and full life",
+    "email": "contact@jadoo.com",
+    "phone": "+1 (555) 123-4567"
+  },
+  "navigation": {
+    "main": [
+      {
+        "id": 1,
+        "label": "Destinations",
+        "href": "/destinations"
+      },
+      {
+        "id": 2,
+        "label": "Hotels",
+        "href": "/hotels"
+      },
+      {
+        "id": 3,
+        "label": "Flights",
+        "href": "/flights"
+      },
+      {
+        "id": 4,
+        "label": "Bookings",
+        "href": "/bookings"
+      },
+      {
+        "id": 5,
+        "label": "Login",
+        "href": "/login"
+      }
+    ],
+    "languages": [
+      {
+        "value": "en",
+        "label": "EN"
+      },
+      {
+        "value": "es",
+        "label": "ES"
+      },
+      {
+        "value": "fr",
+        "label": "FR"
+      }
+    ],
+    "buttons": {
+      "signUp": "Sign Up",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    }
+  },
+  "hero": {
+    "title": "Best Destinations around the world",
+    "subtitle": "Travel, <span>enjoy</span><br/> and live a new<br/> and full life",
+    "description": "Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.",
+    "buttons": {
+      "primary": {
+        "text": "Find out more",
+        "href": "/destinations"
+      },
+      "secondary": {
+        "text": "Play Demo",
+        "href": "#video"
+      }
+    }
+  },
+  "services": {
+    "title": "We Offer Best Services",
+    "subtitle": "Category",
+    "items": [
+      {
+        "id": 1,
+        "title": "Calculated Weather",
+        "description": "Built Wicket longer admire do barton vanity itself do in it.",
+        "icon": "/icons/weather.svg"
+      },
+      {
+        "id": 2,
+        "title": "Best Flights",
+        "description": "Engrossed listening. Park gate sell they west hard for the.",
+        "icon": "/icons/flights.svg"
+      },
+      {
+        "id": 3,
+        "title": "Local Events",
+        "description": "Barton vanity itself do in it. Preferred to men it engrossed listening.",
+        "icon": "/icons/events.svg"
+      },
+      {
+        "id": 4,
+        "title": "Customization",
+        "description": "We deliver outsourced aviation services for military customers.",
+        "icon": "/icons/customization.svg"
+      }
+    ]
+  },
+  "destinations": {
+    "title": "Top Selling",
+    "subtitle": "Top Destinations",
+    "items": [
+      {
+        "id": 1,
+        "name": "Rome, Italy",
+        "price": "$5,42k",
+        "duration": "10 Days Trip",
+        "image": "/images/rome.jpg"
+      },
+      {
+        "id": 2,
+        "name": "London, UK",
+        "price": "$4,2k",
+        "duration": "12 Days Trip",
+        "image": "/images/london.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Full Europe",
+        "price": "$15k",
+        "duration": "28 Days Trip",
+        "image": "/images/europe.jpg"
+      }
+    ]
+  },
+  "booking": {
+    "title": "Easy and Fast",
+    "subtitle": "Book your next trip in 3 easy steps",
+    "steps": [
+      {
+        "id": 1,
+        "icon": "/icons/destination.svg",
+        "title": "Choose Destination",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+      },
+      {
+        "id": 2,
+        "icon": "/icons/payment.svg",
+        "title": "Make Payment",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+      },
+      {
+        "id": 3,
+        "icon": "/icons/airport.svg",
+        "title": "Reach Airport on Selected Date",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+      }
+    ],
+    "trip": {
+      "destination": "Trip To Greece",
+      "date": "14-29 June | by Robbin joseph",
+      "people": "24 people going",
+      "likes": "18",
+      "image": "/images/greece.jpg"
+    }
+  },
+  "testimonials": {
+    "title": "What people say about Us.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Mike taylor",
+        "location": "Lahore, Pakistan",
+        "text": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
+        "avatar": "/images/mike.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Chris Thomas",
+        "location": "CEO of Red Button",
+        "text": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
+        "avatar": "/images/chris.jpg"
+      }
+    ]
+  },
+  "companies": {
+    "title": "Our Partners",
+    "logos": [
+      {
+        "name": "Axon",
+        "image": "/logos/axon.png"
+      },
+      {
+        "name": "Jetstar",
+        "image": "/logos/jetstar.png"
+      },
+      {
+        "name": "Expedia",
+        "image": "/logos/expedia.png"
+      },
+      {
+        "name": "Qantas",
+        "image": "/logos/qantas.png"
+      },
+      {
+        "name": "Alitalia",
+        "image": "/logos/alitalia.png"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Book your trip in minute, get full Control for much longer.",
+    "sections": [
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About",
+            "href": "/about"
+          },
+          {
+            "label": "Careers",
+            "href": "/careers"
+          },
+          {
+            "label": "Mobile",
+            "href": "/mobile"
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "links": [
+          {
+            "label": "Help/FAQ",
+            "href": "/help"
+          },
+          {
+            "label": "Press",
+            "href": "/press"
+          },
+          {
+            "label": "Affiliates",
+            "href": "/affiliates"
+          }
+        ]
+      },
+      {
+        "title": "More",
+        "links": [
+          {
+            "label": "Airlinefees",
+            "href": "/airlinefees"
+          },
+          {
+            "label": "Airline",
+            "href": "/airline"
+          },
+          {
+            "label": "Low fare tips",
+            "href": "/tips"
+          }
+        ]
+      }
+    ],
+    "social": [
+      {
+        "platform": "facebook",
+        "href": "https://facebook.com/jadoo",
+        "icon": "/icons/facebook.svg"
+      },
+      {
+        "platform": "instagram",
+        "href": "https://instagram.com/jadoo",
+        "icon": "/icons/instagram.svg"
+      },
+      {
+        "platform": "twitter",
+        "href": "https://twitter.com/jadoo",
+        "icon": "/icons/twitter.svg"
+      }
+    ],
+    "newsletter": {
+      "title": "Subscribe to get information, latest news and other interesting offers about Jadoo",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    }
+  }
+}
