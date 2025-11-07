@@ -1,15 +1,17 @@
 import { useHeroData } from "@/hooks/useData";
 import Container from "./Container";
 import Button from "./Button";
-import { Plane, PlayIcon } from "./Icons";
+import { Plane, Plane2, PlayIcon } from "./Icons";
 
 export default function Hero() {
   const hero = useHeroData();
 
   return (
     <section>
-      <Container className="py-30 relative flex min-h-svh items-center">
-        <div className="lg:max-w-1/2 relative z-10 max-w-full">
+      <div className="absolute left-[-420px] top-[-60px] size-[480px] rounded-full bg-[#D5AEE4] blur-[150px]" />
+      <Container className="relative mt-10 flex min-h-svh items-center py-20">
+        <div className="absolute -top-10 left-1/2 h-[736px] w-[1327px] bg-[url('/public/cloud.svg')] bg-no-repeat" />
+        <div className="relative z-10 mx-auto max-w-[380px] text-center md:m-0 md:max-w-[420px] md:text-left lg:max-w-[480px] xl:max-w-[560px]">
           <h1 className="text-orange mb-6 text-sm font-bold uppercase md:text-[20px]">
             {hero.title}
           </h1>
@@ -21,7 +23,7 @@ export default function Hero() {
             {hero.description}
           </p>
 
-          <div className="flex gap-5 md:gap-8">
+          <div className="flex justify-center gap-5 md:justify-start md:gap-8">
             <Button href={hero.buttons.primary.href} variant="primary">
               {hero.buttons.primary.text}
             </Button>
@@ -33,13 +35,20 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute -right-1 bottom-0 top-0 hidden md:flex">
-          <div className="relative my-auto flex">
-            <Plane size={160} className="left-1/6 top-1/15 absolute" />
+        <div className="relative hidden min-h-full grow self-stretch md:flex">
+          <div className="absolute -left-40 bottom-0 right-auto top-0 aspect-square max-h-[80svh] min-h-full lg:-left-20 lg:right-0">
+            <Plane
+              size={160}
+              className="left-1/6 top-1/15 animate-float absolute will-change-transform"
+            />
             <img
-              className="h-auto w-full"
-              src="/public/traveler.webp"
+              className="absolute top-1/2 z-10 translate-y-[-50%]"
+              src="/traveler.webp"
               alt="Traveler Illustration"
+            />
+            <Plane2
+              size={140}
+              className="right-1/6 top-1/10 animate-float absolute will-change-transform"
             />
           </div>
         </div>
