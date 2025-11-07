@@ -43,7 +43,7 @@ export default function Hero() {
             />
             <img
               className="pointer-events-none absolute top-1/2 z-10 translate-y-[-50%]"
-              src="/traveler.webp"
+              src="./traveler.webp"
               alt="Traveler Illustration"
             />
             <Plane2
