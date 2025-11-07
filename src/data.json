@@ -27,11 +27,6 @@
         "id": 4,
         "label": "Bookings",
         "href": "/bookings"
-      },
-      {
-        "id": 5,
-        "label": "Login",
-        "href": "/login"
       }
     ],
     "languages": [
@@ -49,9 +44,14 @@
       }
     ],
     "buttons": {
-      "signUp": "Sign Up",
-      "getStarted": "Get Started",
-      "learnMore": "Learn More"
+      "login": {
+        "text": "Log In",
+        "href": "/login"
+      },
+      "signUp": {
+        "text": "Sign Up",
+        "href": "/sign-up"
+      }
     }
   },
   "hero": {
