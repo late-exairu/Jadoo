@@ -33,23 +33,6 @@ yarn lint
 yarn format
 ```
 
-## 🌐 Deployment
-
-### Automatic deployment (GitHub Actions)
-
-The project is configured for automatic deployment to GitHub Pages when you push to the main branch.
-
-1. Push your changes to the `main` branch
-2. GitHub Actions will automatically build and deploy to GitHub Pages
-3. Your site will be available at: `https://late-exairu.github.io/Jadoo/`
-
-### Manual deployment
-
-```bash
-# Build and deploy to gh-pages branch
-yarn deploy
-```
-
 ## 📁 Project Structure
 
 ```
@@ -77,11 +60,3 @@ src/
 - **Tailwind CSS 4** - Utility-first CSS framework
 - **Class Variance Authority** - Component variant management
 - **GitHub Pages** - Static site hosting
-
-## 📄 License
-
-This project is private and proprietary.
-
-## 🤝 Contributing
-
-This is a private project. Please contact the maintainer for contribution guidelines.
