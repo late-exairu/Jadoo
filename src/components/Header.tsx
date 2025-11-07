@@ -1,43 +1,37 @@
 import Logo from "@/components/Logo";
 import Container from "@/components/Container";
-import { useNavigation } from "@/hooks/useData";
+import MenuMobile from "@/components/MenuMobile";
+import useMediaQuery from "../hooks/useMediaQuery";
+import MenuDesktop from "./MenuDesktop";
+import { useEffect, useState } from "react";
 
 export default function Header() {
-  const navigation = useNavigation();
-  return (
-    <header className="fixed left-0 top-0 z-50 flex w-full py-12">
-      <Container className="flex items-center justify-between">
-        <Logo className="my-[3px] h-[34px] w-[115px]" />
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
-        <div className="flex">
-          <nav>
-            <ul className="flex gap-8 text-[17px] font-medium">
-              {navigation.main.map(item => (
-                <li key={item.id}>
-                  <a
-                    href={item.href}
-                    className="text-text-dark hover:text-orange flex h-10 items-center px-2 leading-tight transition-colors"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <a
-            href=""
-            className="text-text-dark hover:text-orange flex h-10 items-center px-2 transition-colors"
-          >
-            {navigation.buttons.signUp}
-          </a>
-          <select name="language" id="">
-            {navigation.languages.map(option => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
+  useEffect(() => {
+    window.addEventListener("scroll", checkSticky);
+    return () => {
+      window.removeEventListener("scroll", checkSticky);
+    };
+  }, []);
+
+  function checkSticky() {
+    const scrollTop = window.scrollY;
+    if (scrollTop >= 1) {
+      setIsHeaderSticky(true);
+    } else {
+      setIsHeaderSticky(false);
+    }
+  }
+
+  return (
+    <header
+      className={`fixed left-0 top-0 z-50 flex w-full ${isHeaderSticky ? "bg-white py-4 shadow-md lg:py-6" : "bg-transparent py-8 lg:py-12"} transition-all duration-300 ease-in-out`}
+    >
+      <Container className="relative flex items-center justify-between">
+        <Logo className="my-[3px] flex h-[34px] min-w-[115px]" />
+
+        {useMediaQuery("(width < 1024px)") ? <MenuMobile /> : <MenuDesktop />}
       </Container>
     </header>
   );

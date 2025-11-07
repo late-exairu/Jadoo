@@ -20,13 +20,17 @@ const buttonVariants = cva(
           "bg-yellow hover:bg-yellow/90 text-white shadow-[0px_15px_35px_0px_#F1A50126]",
         secondary:
           "text-text-dark border border-gray-300 bg-white hover:bg-gray-50",
+        login:
+          "hover:border-yellow text-text-dark hover:bg-yellow border border-transparent hover:text-white",
+        signUp:
+          "border-text-dark hover:border-orange text-text-dark hover:bg-orange border hover:text-white",
         outline:
-          "border-orange text-orange hover:bg-orange border hover:text-white",
+          "border-text-dark hover:border-orange text-text-dark hover:bg-orange border hover:text-white",
         ghost: "text-text hover:bg-gray-100",
         link: "text-orange underline-offset-4 hover:underline",
       },
       size: {
-        sm: "h-[30px] rounded-md px-2 md:h-[40px] md:rounded-lg md:px-4",
+        sm: "h-[30px] rounded-sm px-3 md:h-[40px] md:rounded-md md:px-5",
         md: "h-[50px] rounded-lg px-4 py-2 md:h-[60px] md:rounded-[12px] md:px-[26px]",
       },
     },
