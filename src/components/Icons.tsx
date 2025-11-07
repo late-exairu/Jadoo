@@ -15,10 +15,10 @@ const svgIcons = {
           {`
             @keyframes pulse {
               0%, 100% { transform: scale(1) translateY(0px);}
-              50% { transform: scale(1.05) translateY(-5px);}
+              50% { transform: scale(1.05) translateY(10px);}
             }
             #element-0 {
-              animation: pulse 2.5s ease-in-out 0s infinite alternate forwards;
+              animation: pulse 4.5s ease-in-out 0s infinite alternate forwards;
             }
           `}
         </style>
@@ -57,16 +57,16 @@ const svgIcons = {
       <>
         <style>
           {`
-            @keyframes pulse {
+            @keyframes pulse2 {
               0%, 100% { transform: translateY(0px);}
               50% { transform: translate(-10px, -10px);}
             }
-            #element-0 {
-              animation: pulse 5s ease-in-out 0s infinite alternate forwards;
+            #element-10 {
+              animation: pulse2 5s ease-in-out 0s infinite alternate forwards;
             }
           `}
         </style>
-        <g id="element-0">
+        <g id="element-10">
           <path
             fill="#d5d6db"
             d="M71.82 86.847a11.9 11.9 0 0 0-3.888 1.655c-3.14 2.002-4.968 4.858-4.08 6.38.886 1.523 4.151 1.133 7.292-.868a12.4 12.4 0 0 0 3.19-2.852c.409-.542.482-1.218.187-1.723l-1.152-1.977c-.293-.507-.902-.748-1.55-.615m-7.887-26.993c-.985.22-1.944.63-2.818 1.2-2.277 1.451-3.603 3.523-2.96 4.626.642 1.102 3.01.82 5.287-.63a9 9 0 0 0 2.313-2.07c.296-.393.35-.882.135-1.248l-.834-1.432c-.212-.367-.653-.542-1.123-.446"
