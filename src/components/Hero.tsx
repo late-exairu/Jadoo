@@ -48,7 +48,7 @@ export default function Hero() {
             />
             <Plane2
               size={140}
-              className="right-1/6 top-1/10 animate-float absolute will-change-transform"
+              className="right-1/8 top-1/6 animate-float absolute will-change-transform"
             />
           </div>
         </div>
