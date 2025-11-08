@@ -33,6 +33,10 @@ export function useTestimonialsData() {
   return data.testimonials;
 }
 
+export function usePartnersData() {
+  return data.partners;
+}
+
 export function useFooterData() {
   return data.footer;
 }

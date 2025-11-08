@@ -28,7 +28,10 @@ export default function Header() {
     <header
       className={`fixed left-0 top-0 z-50 flex w-full ${isHeaderSticky ? "bg-white py-4 shadow-md lg:py-6" : "bg-transparent py-8 lg:py-12"} transition-all duration-300 ease-in-out`}
     >
-      <Container className="relative flex items-center justify-between">
+      <Container
+        className="relative flex items-center justify-between"
+        variant="header"
+      >
         <Logo className="my-[3px] flex h-[34px] min-w-[115px]" />
 
         {useMediaQuery("(width < 1024px)") ? <MenuMobile /> : <MenuDesktop />}

@@ -70,32 +70,32 @@
     }
   },
   "services": {
-    "title": "We Offer Best Services",
-    "subtitle": "Category",
+    "title": "Category",
+    "subtitle": "We Offer Best Services",
     "items": [
       {
         "id": 1,
         "title": "Calculated Weather",
         "description": "Built Wicket longer admire do barton vanity itself do in it.",
-        "icon": "/icons/weather.svg"
+        "icon": "satellite"
       },
       {
         "id": 2,
         "title": "Best Flights",
         "description": "Engrossed listening. Park gate sell they west hard for the.",
-        "icon": "/icons/flights.svg"
+        "icon": "plane"
       },
       {
         "id": 3,
         "title": "Local Events",
         "description": "Barton vanity itself do in it. Preferred to men it engrossed listening.",
-        "icon": "/icons/events.svg"
+        "icon": "mic"
       },
       {
         "id": 4,
         "title": "Customization",
         "description": "We deliver outsourced aviation services for military customers.",
-        "icon": "/icons/customization.svg"
+        "icon": "gear"
       }
     ]
   },
@@ -158,7 +158,8 @@
     }
   },
   "testimonials": {
-    "title": "What people say about Us.",
+    "title": "Testimonials",
+    "subtitle": "What people say about Us",
     "items": [
       {
         "id": 1,
@@ -173,11 +174,17 @@
         "location": "CEO of Red Button",
         "text": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
         "avatar": "/images/chris.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Sara Smith",
+        "location": "Designer at Creativio",
+        "text": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
+        "avatar": "/images/sara.jpg"
       }
     ]
   },
-  "companies": {
-    "title": "Our Partners",
+  "partners": {
     "logos": [
       {
         "name": "Axon",
@@ -202,7 +209,7 @@
     ]
   },
   "footer": {
-    "description": "Book your trip in minute, get full Control for much longer.",
+    "description": "Book your trip in minute, get full Control for much longer",
     "sections": [
       {
         "title": "Company",

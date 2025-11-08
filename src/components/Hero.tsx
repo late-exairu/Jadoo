@@ -1,7 +1,7 @@
 import { useHeroData } from "@/hooks/useData";
 import Container from "./Container";
 import Button from "./Button";
-import { Plane, Plane2, PlayIcon } from "./Icons";
+import { PlaneIcon, PlayIcon } from "./Icons";
 
 export default function Hero() {
   const hero = useHeroData();
@@ -36,19 +36,19 @@ export default function Hero() {
         </div>
 
         <div className="relative hidden min-h-full grow self-stretch md:flex">
-          <div className="absolute inset-y-0 left-1/2 aspect-square min-h-full -translate-x-[50%] lg:left-1/2 [@media(height<768px)]:-inset-y-10">
-            <Plane
+          <div className="absolute inset-y-0 left-1/2 top-8 aspect-square min-h-full md:translate-x-[-45vw] lg:left-1/2 lg:translate-x-[-50%] [@media(height<768px)]:-inset-y-10">
+            <PlaneIcon
               size={160}
-              className="left-1/6 top-1/15 animate-float absolute will-change-transform"
+              className="left-1/6 top-1/15 animate-float absolute animate-[fly_4.5s_ease-in-out_0s_infinite_alternate_forwards] will-change-transform"
             />
             <img
               className="pointer-events-none absolute top-1/2 z-10 translate-y-[-50%]"
               src="./traveler.webp"
               alt="Traveler Illustration"
             />
-            <Plane2
+            <PlaneIcon
               size={140}
-              className="right-1/8 top-1/6 animate-float absolute will-change-transform"
+              className="right-1/8 top-1/6 animate-float absolute animate-[fly2_5s_ease-in-out_0s_infinite_alternate_forwards] will-change-transform"
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-auto flex bg-gray-50 py-16">
-      <Container>
+      <Container variant="footer">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Company Info */}
           <div className="lg:col-span-2">
