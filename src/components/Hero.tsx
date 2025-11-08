@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section>
       <div className="absolute left-[-420px] top-[-60px] size-[480px] rounded-full bg-[#D5AEE4] blur-[150px]" />
-      <Container className="relative mt-10 flex min-h-svh items-center py-20">
+      <Container className="pt-30 relative flex min-h-svh items-center py-20">
         <div className="absolute -top-10 left-1/2 h-[736px] w-[1327px] bg-[url('/cloud.svg')] bg-no-repeat" />
         <div className="relative z-20 mx-auto max-w-[380px] text-center md:m-0 md:max-w-[420px] md:text-left lg:max-w-[480px] xl:max-w-[560px]">
           <h1 className="text-orange mb-6 text-sm font-bold uppercase md:text-[20px]">
@@ -36,7 +36,7 @@ export default function Hero() {
         </div>
 
         <div className="relative hidden min-h-full grow self-stretch md:flex">
-          <div className="absolute -left-40 bottom-0 right-auto top-0 aspect-square max-h-[80svh] min-h-full lg:-left-20 lg:right-0">
+          <div className="absolute inset-y-0 left-1/2 aspect-square min-h-full -translate-x-[50%] lg:left-1/2 [@media(height<768px)]:-inset-y-10">
             <Plane
               size={160}
               className="left-1/6 top-1/15 animate-float absolute will-change-transform"
