@@ -12,7 +12,7 @@ export interface ButtonProps extends VariantProps<typeof buttonVariants> {
 }
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center font-medium transition-colors disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center font-medium leading-none transition-colors disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {

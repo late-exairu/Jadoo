@@ -108,21 +108,35 @@
         "name": "Rome, Italy",
         "price": "$5,42k",
         "duration": "10 Days Trip",
-        "image": "/images/rome.jpg"
+        "image": "/images/rome.png"
       },
       {
         "id": 2,
-        "name": "London, UK",
+        "name": "London, United Kingdom",
         "price": "$4,2k",
         "duration": "12 Days Trip",
-        "image": "/images/london.jpg"
+        "image": "/images/london.png"
       },
       {
         "id": 3,
-        "name": "Full Europe",
-        "price": "$15k",
+        "name": "Lviv, Ukraine",
+        "price": "$9k",
         "duration": "28 Days Trip",
-        "image": "/images/europe.jpg"
+        "image": "/images/lviv.png"
+      },
+      {
+        "id": 4,
+        "name": "Paris, France",
+        "price": "$8,5k",
+        "duration": "10 Days Trip",
+        "image": "/images/paris.png"
+      },
+      {
+        "id": 5,
+        "name": "Berlin, Germany",
+        "price": "$12,2k",
+        "duration": "16 Days Trip",
+        "image": "/images/berlin.png"
       }
     ]
   },
