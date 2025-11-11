@@ -55,7 +55,7 @@ export default function Services() {
         </TitleSmall>
         <TitleBig className="text-center">{services.subtitle}</TitleBig>
 
-        <ul className="md:mt-18 mx-auto mb-8 mt-16 flex max-w-[700px] flex-col items-center gap-y-10 md:mb-10 md:flex-row md:flex-wrap md:items-stretch md:justify-center lg:mb-12 lg:mt-20 lg:max-w-full lg:justify-center">
+        <ul className="md:mt-18 mx-auto mb-8 mt-16 flex max-w-[700px] flex-col items-center gap-y-4 md:mb-10 md:flex-row md:flex-wrap md:items-stretch md:justify-center md:gap-10 lg:mb-12 lg:mt-20 lg:max-w-full lg:justify-center">
           {services.items.map((service: Service, index: number) => (
             <li
               key={index}
