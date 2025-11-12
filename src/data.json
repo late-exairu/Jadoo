@@ -142,23 +142,23 @@
   },
   "booking": {
     "title": "Easy and Fast",
-    "subtitle": "Book your next trip in 3 easy steps",
+    "subtitle": "Book Your Next Trip in 3 Easy Steps",
     "steps": [
       {
         "id": 1,
-        "icon": "/icons/destination.svg",
+        "icon": "destination",
         "title": "Choose Destination",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
       },
       {
         "id": 2,
-        "icon": "/icons/payment.svg",
+        "icon": "payment",
         "title": "Make Payment",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
       },
       {
         "id": 3,
-        "icon": "/icons/airport.svg",
+        "icon": "airport",
         "title": "Reach Airport on Selected Date",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
       }
@@ -173,7 +173,7 @@
   },
   "testimonials": {
     "title": "Testimonials",
-    "subtitle": "What people say about Us",
+    "subtitle": "What People Say About Us",
     "items": [
       {
         "id": 1,

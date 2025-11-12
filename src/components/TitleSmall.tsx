@@ -6,7 +6,7 @@ export default function TitleSmall({
   className?: string;
 }) {
   return (
-    <div className={`text-text mb-3 text-lg font-semibold ${className}`}>
+    <div className={`text-text mb-2 text-lg font-semibold ${className}`}>
       {children}
     </div>
   );
