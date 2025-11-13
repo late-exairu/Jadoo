@@ -4,37 +4,31 @@ import { useDestinationsData } from "@/hooks/useData";
 import Container from "@/components/Container";
 import TitleSmall from "@/components/TitleSmall";
 import TitleBig from "@/components/TitleBig";
-import { DestinationIcon } from "./Icons";
+import { PointerIcon } from "@/components/Icons";
 
 export default function Destinations() {
   const destinations = useDestinationsData();
 
   return (
     <section>
-      <Container className="max-w-[1120px]">
+      <Container>
         <TitleSmall className="text-center">{destinations.title}</TitleSmall>
         <TitleBig className="text-center">{destinations.subtitle}</TitleBig>
 
         <Swiper
           slidesPerView={1}
+          spaceBetween={50}
           breakpoints={{
             640: {
               slidesPerView: 2,
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            1480: {
-              initialSlide: 1,
-              slidesPerView: 3,
-              spaceBetween: 50,
             },
           }}
-          spaceBetween={50}
           onSlideChange={() => console.log("slide change")}
           onSwiper={swiper => console.log(swiper)}
-          className="overflow-visible! mt-12 md:mt-16"
+          className="px-10! pb-25! md:px-12! -mx-5! md:mt-15 mt-12"
         >
           {destinations.items.map((destination, index) => (
             <SwiperSlide
@@ -52,7 +46,7 @@ export default function Destinations() {
                   <span>{destination.price}</span>
                 </div>
 
-                <DestinationIcon size={20} className="mb-1 mr-3 inline-flex" />
+                <PointerIcon size={20} className="mb-1 mr-3 inline-flex" />
                 {destination.duration}
               </div>
             </SwiperSlide>

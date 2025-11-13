@@ -7,7 +7,7 @@ export default function TitleBig({
 }) {
   return (
     <div
-      className={`text-text-black font-serif text-3xl font-bold lg:text-[50px] ${className}`}
+      className={`text-text-black font-serif text-3xl font-bold leading-[1.3] lg:text-[50px] ${className}`}
     >
       {children}
     </div>
