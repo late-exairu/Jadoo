@@ -20,7 +20,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="mt-auto flex py-4">
+    <footer className="relative mt-auto flex py-4">
+      <div className="absolute bottom-[-180px] left-[95%] size-[480px] rounded-full bg-[#D5AEE4] blur-[150px]" />
+
       <Container variant="footer">
         <div className="flex flex-col flex-wrap justify-between gap-5 text-center md:flex-row md:gap-10 md:text-left xl:flex-nowrap">
           {/* Company Info */}
@@ -80,6 +82,7 @@ export default function Footer() {
 
             <div className="min-w-55 flex justify-center gap-2 md:justify-start">
               <Button
+                href="/"
                 variant="store"
                 size="none"
                 className="w-26 h-9 rounded-3xl px-4"
@@ -88,6 +91,7 @@ export default function Footer() {
               </Button>
 
               <Button
+                href="/"
                 variant="store"
                 size="none"
                 className="w-26 h-9 rounded-3xl fill-white px-4"
