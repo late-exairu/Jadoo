@@ -108,35 +108,35 @@
         "name": "Rome, Italy",
         "price": "$5,42k",
         "duration": "10 Days Trip",
-        "image": "../images/rome.png"
+        "image": "./images/rome.png"
       },
       {
         "id": 2,
         "name": "London, United Kingdom",
         "price": "$4,2k",
         "duration": "12 Days Trip",
-        "image": "../images/london.png"
+        "image": "./images/london.png"
       },
       {
         "id": 3,
         "name": "Lviv, Ukraine",
         "price": "$9k",
         "duration": "28 Days Trip",
-        "image": "../images/lviv.png"
+        "image": "./images/lviv.png"
       },
       {
         "id": 4,
         "name": "Paris, France",
         "price": "$8,5k",
         "duration": "10 Days Trip",
-        "image": "../images/paris.png"
+        "image": "./images/paris.png"
       },
       {
         "id": 5,
         "name": "Berlin, Germany",
         "price": "$12,2k",
         "duration": "16 Days Trip",
-        "image": "../images/berlin.png"
+        "image": "./images/berlin.png"
       }
     ]
   },
@@ -168,9 +168,9 @@
       "date": "14-29 June | by Robbin joseph",
       "people": "24 people going",
       "likes": "18",
-      "image": "../images/santorini.png",
+      "image": "./images/santorini.png",
       "ongoing": {
-        "img": "../images/rome_trip.png",
+        "img": "./images/rome_trip.png",
         "location": "Rome",
         "progress": 40
       }
