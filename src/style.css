@@ -8,6 +8,8 @@
   /* Custom Colors */
   --color-orange: #df6951;
   --color-yellow: #f1a501;
+  --color-violet: #8a79df;
+  --color-sapphire: #006380;
 
   --color-text-dark: #181e4b;
   --color-text: #5e6282;
@@ -112,7 +114,7 @@
   font-size: 16px;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
+  font-style: medium;
   line-height: 1.36;
   color: var(--color-text-dark);
   background-color: #ffffff;

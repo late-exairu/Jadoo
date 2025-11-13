@@ -13,15 +13,15 @@ export default function Hero() {
         <div className="absolute -top-10 left-1/2 h-[736px] w-[1327px] bg-[url('/cloud.svg')] bg-no-repeat" />
 
         <div className="align relative my-auto flex min-h-[calc(100svh-120px)] items-center self-center">
-          <div className="relative z-20 mx-auto max-w-[380px] text-center md:m-0 md:my-20 md:max-w-[420px] md:text-left lg:max-w-[480px] xl:max-w-[560px]">
-            <h1 className="text-orange mb-6 text-sm font-bold uppercase md:text-[20px]">
+          <div className="relative z-20 mx-auto max-w-[420px] text-center md:m-0 md:my-20 md:max-w-[420px] md:text-left lg:max-w-[480px] xl:max-w-[560px]">
+            <h1 className="text-orange mb-6 text-base font-bold uppercase md:text-[20px]">
               {hero.title}
             </h1>
             <h2
-              className="text-text-dark [&>span]:after:-translate-x-3/7 mb-6 font-serif text-5xl leading-[1.06] tracking-[-0.04em] md:text-6xl lg:mb-8 lg:text-7xl xl:text-[84px] [&>span]:relative [&>span]:z-10 [&>span]:after:absolute [&>span]:after:bottom-[15%] [&>span]:after:left-1/2 [&>span]:after:-z-10 [&>span]:after:h-[12%] [&>span]:after:w-[140%] [&>span]:after:bg-[url('/underline.svg')] [&>span]:after:bg-center [&>span]:after:bg-no-repeat [&>span]:after:content-['']"
+              className="text-text-dark [&>span]:after:-translate-x-3/7 mb-6 font-serif text-5xl leading-[1.06] tracking-[-0.04em] md:text-6xl lg:mb-8 lg:text-7xl xl:text-[84px] [&>span]:relative [&>span]:z-10 [&>span]:after:absolute [&>span]:after:bottom-[15%] [&>span]:after:left-1/2 [&>span]:after:-z-10 [&>span]:after:h-[12%] [&>span]:after:w-[140%] [&>span]:after:bg-[url('./underline.svg')] [&>span]:after:bg-center [&>span]:after:bg-no-repeat [&>span]:after:content-['']"
               dangerouslySetInnerHTML={{ __html: hero.subtitle }}
             />
-            <p className="mb-8 max-w-lg text-sm leading-loose text-gray-700 lg:text-base">
+            <p className="mb-8 max-w-lg leading-loose text-gray-700 lg:text-base">
               {hero.description}
             </p>
 
