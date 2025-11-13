@@ -12,7 +12,7 @@ const containerVariants = cva("container", {
     variant: {
       content: "py-10 md:py-14 lg:py-16",
       header: "",
-      footer: "py-6 md:py-10 lg:py-12",
+      footer: "max-w-[1140px] py-6 md:py-10 lg:py-12",
     },
   },
   defaultVariants: {
