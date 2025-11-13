@@ -228,7 +228,7 @@
     ]
   },
   "footer": {
-    "description": "Book your trip in minute, get full Control for much longer",
+    "description": "Discover our app",
     "sections": [
       {
         "title": "Company",
@@ -286,17 +286,17 @@
       {
         "platform": "facebook",
         "href": "https://facebook.com/jadoo",
-        "icon": "/icons/facebook.svg"
+        "icon": "facebook"
       },
       {
         "platform": "instagram",
         "href": "https://instagram.com/jadoo",
-        "icon": "/icons/instagram.svg"
+        "icon": "instagram"
       },
       {
-        "platform": "twitter",
+        "platform": "x",
         "href": "https://twitter.com/jadoo",
-        "icon": "/icons/twitter.svg"
+        "icon": "xitter"
       }
     ],
     "newsletter": {

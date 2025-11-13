@@ -13,16 +13,14 @@ import {
   HeartIcon,
 } from "@/components/Icons";
 
-type BookingStepIcon = "destination" | "payment" | "airport";
-
 export default function Booking() {
   const booking = useBookingData();
   const trip = booking.trip;
 
   const bookingIcons = {
-    destination: <DestinationIcon size={22} className="size-8 md:size-5.5" />,
-    payment: <PaymentIcon size={22} className="size-8 md:size-5.5" />,
-    airport: <AirportIcon size={22} className="size-8 md:size-5.5" />,
+    destination: <DestinationIcon size={22} className="md:size-5.5 size-8" />,
+    payment: <PaymentIcon size={22} className="md:size-5.5 size-8" />,
+    airport: <AirportIcon size={22} className="md:size-5.5 size-8" />,
   };
 
   const stepColor = {
@@ -33,8 +31,8 @@ export default function Booking() {
 
   return (
     <section>
-      <Container className="flex flex-col md:flex-row gap-8 md:gap-12.5">
-        <div className="md:w-1/2 text-center md:text-left">
+      <Container className="md:gap-12.5 flex flex-col gap-8 md:flex-row">
+        <div className="text-center md:w-1/2 md:text-left">
           <TitleSmall className="text-center md:text-left">
             {booking.title}
           </TitleSmall>
@@ -42,16 +40,16 @@ export default function Booking() {
             {booking.subtitle}
           </TitleBig>
 
-          <ul className="mt-12 md:mt-8 max-w-100 mx-auto md:mx-0">
+          <ul className="max-w-100 mx-auto mt-12 md:mx-0 md:mt-8">
             {booking.steps.map((item, index) => (
               <li
                 key={index}
-                className="text-text gap-5 not-first:mt-11.5 mb-8 flex flex-col md:flex-row md:items-center"
+                className="text-text not-first:mt-11.5 mb-8 flex flex-col gap-5 md:flex-row md:items-center"
               >
                 <div
-                  className={`${stepColor[(index % 3) as keyof typeof stepColor]} self-center mt-1 flex size-16 md:size-12 shrink-0 items-center justify-center md:self-start rounded-xl md:mb-0`}
+                  className={`${stepColor[(index % 3) as keyof typeof stepColor]} mt-1 flex size-16 shrink-0 items-center justify-center self-center rounded-xl md:mb-0 md:size-12 md:self-start`}
                 >
-                  {bookingIcons[item.icon as BookingStepIcon]}
+                  {bookingIcons[item.icon as keyof typeof bookingIcons]}
                 </div>
 
                 <div>
@@ -65,27 +63,27 @@ export default function Booking() {
           </ul>
         </div>
 
-        <div className="md:w-1/2 flex justify-center md:justify-start items-start mb-24 md:mb-0">
-          <div className="md:mt-18 md:ml-6 max-w-[370px] rounded-3xl bg-white px-6 py-5 pb-7 shadow-[0px_65px_50px_0px_rgba(0,0,0,.05),30px_-30px_60px_0px_rgba(89,177,230,.25)] font-medium text-text">
+        <div className="mb-24 flex items-start justify-center md:mb-0 md:w-1/2 md:justify-start">
+          <div className="md:mt-18 text-text max-w-[370px] rounded-3xl bg-white px-6 py-5 pb-7 font-medium shadow-[0px_65px_50px_0px_rgba(0,0,0,.05),30px_-30px_60px_0px_rgba(89,177,230,.25)] md:ml-6">
             <img
               src={trip.image}
               alt={trip.destination}
               className="mb-6 w-full rounded-3xl"
             />
-            <p className="text-lg text-text-dark leading-tight mb-4">
+            <p className="text-text-dark mb-4 text-lg leading-tight">
               {trip.destination}
             </p>
 
             <div>{trip.date}</div>
 
-            <div className="flex mt-5 mb-7 gap-4.5">
-              <div className="size-9 flex items-center justify-center bg-gray-400/10 rounded-full">
+            <div className="gap-4.5 mb-7 mt-5 flex">
+              <div className="flex size-9 items-center justify-center rounded-full bg-gray-400/10">
                 <LeafIcon size={14} className="" />
               </div>
-              <div className="size-9 flex items-center justify-center bg-gray-400/10 rounded-full">
+              <div className="flex size-9 items-center justify-center rounded-full bg-gray-400/10">
                 <MapIcon size={14} className="" />
               </div>
-              <div className="size-9 flex items-center justify-center bg-gray-400/10 rounded-full">
+              <div className="flex size-9 items-center justify-center rounded-full bg-gray-400/10">
                 <PaperPlaneIcon size={14} className="fill-amber-300" />
               </div>
             </div>
@@ -95,11 +93,11 @@ export default function Booking() {
               {trip.people}
               <span className="ml-1">{trip.likes}</span>
 
-              <div className="right-0 absolute top-0">
+              <div className="absolute right-0 top-0">
                 <HeartIcon size={20} className="" />
 
                 {trip.ongoing && (
-                  <div className="absolute @max-lg:top-6 -right-8 flex lg:-translate-x-1/2 lg:left-1/2 lg:bottom-6 w-65.5 px-5 pt-4.5 pb-5.5 bg-white rounded-2xl shadow-[0px_10px_20px_0px_rgba(0,0,0,.1)] text-sm font-medium gap-2.5">
+                  <div className="@max-lg:top-6 w-65.5 pt-4.5 pb-5.5 absolute -right-8 flex gap-2.5 rounded-2xl bg-white px-5 text-sm font-medium shadow-[0px_10px_20px_0px_rgba(0,0,0,.1)] lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2">
                     <div className="shrink-0">
                       <img
                         src={trip.ongoing.img}
@@ -110,7 +108,7 @@ export default function Booking() {
 
                     <div className="flex-1 text-sm">
                       <p className="-mt-1">Ongoing</p>
-                      <p className="text-lg text-text-dark font-medium">
+                      <p className="text-text-dark text-lg font-medium">
                         Trip to {trip.ongoing.location}
                       </p>
 
@@ -122,7 +120,7 @@ export default function Booking() {
                       </p>
 
                       <progress
-                        className="w-full block h-[5px] rounded-sm overflow-hidden mt-2 appearance-none [&::-webkit-progress-bar]:rounded-sm [&::-webkit-progress-bar]:bg-gray-200 [&::-webkit-progress-value]:bg-violet [&::-moz-progress-bar]:bg-violet [&::-moz-progress-bar]:height-[5px] [&::-moz-progress-bar]:rounded-sm"
+                        className="[&::-webkit-progress-value]:bg-violet [&::-moz-progress-bar]:bg-violet [&::-moz-progress-bar]:height-[5px] mt-2 block h-[5px] w-full appearance-none overflow-hidden rounded-sm [&::-moz-progress-bar]:rounded-sm [&::-webkit-progress-bar]:rounded-sm [&::-webkit-progress-bar]:bg-gray-200"
                         value={`${trip.ongoing.progress}`}
                         max="100"
                       ></progress>
