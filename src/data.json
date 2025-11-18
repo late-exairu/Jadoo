@@ -207,23 +207,23 @@
     "logos": [
       {
         "name": "Axon",
-        "image": "/logos/axon.png"
+        "image": "./images/partners/axon.png"
       },
       {
         "name": "Jetstar",
-        "image": "/logos/jetstar.png"
+        "image": "./images/partners/jetstar.png"
       },
       {
         "name": "Expedia",
-        "image": "/logos/expedia.png"
+        "image": "./images/partners/expedia.png"
       },
       {
         "name": "Qantas",
-        "image": "/logos/qantas.png"
+        "image": "./images/partners/qantas.png"
       },
       {
         "name": "Alitalia",
-        "image": "/logos/alitalia.png"
+        "image": "./images/partners/alitalia.png"
       }
     ]
   },
