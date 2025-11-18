@@ -21,12 +21,15 @@ export default function Newsletter() {
               {newsletter.title}
             </h3>
 
-            <form className="lg:mt-18 mx-auto mt-10 flex max-w-[626px] flex-col gap-4 md:flex-row md:justify-center md:gap-x-6">
+            <form
+              id="newsletter-form"
+              className="lg:mt-18 mx-auto mt-10 flex max-w-[626px] flex-col gap-4 md:flex-row md:justify-center md:gap-x-6"
+            >
               <input
                 type="email"
                 id="newsletter-email"
                 placeholder="Your email"
-                className="text-text-dark h-15 placeholder-text focus:outline-text-dark bg-left-4 bg-size-5 w-full rounded-lg bg-white bg-[url('data:image/svg+xml,%3Csvg_width='21'_height='18'_viewBox='0_0_21_18'_fill='none'_xmlns='http://www.w3.org/2000/svg'%3E%3Cpath_d='M4_6L9.4_10.05C9.75556_10.3167_10.2444_10.3167_10.6_10.05L16_6'_stroke='%2339425D'_stroke-linecap='round'/%3E%3Crect_x='0.5'_y='0.5'_width='20'_height='17'_rx='4.5'_stroke='%2339425D'/%3E%3C/svg%3E%0A')] bg-no-repeat px-16 py-3 focus:outline-2 md:h-[68px] md:w-auto md:flex-1"
+                className="text-text-dark h-15 placeholder-text focus:outline-text-dark bg-left-4 bg-size-[21px] bg-position-[30px_center] w-full rounded-lg bg-white bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyMSAxOCI+PHBhdGggc3Ryb2tlPSIjMzk0MjVkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Im00IDYgNS40IDQuMDVhMSAxIDAgMCAwIDEuMiAwTDE2IDYiLz48cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMTciIHg9Ii41IiB5PSIuNSIgc3Ryb2tlPSIjMzk0MjVkIiByeD0iNC41Ii8+PC9zdmc+')] bg-no-repeat px-16 py-3 font-sans font-medium focus:outline-2 md:h-[68px] md:w-auto md:flex-1"
               />
               <Button
                 type="submit"
