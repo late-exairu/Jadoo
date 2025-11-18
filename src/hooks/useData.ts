@@ -37,6 +37,10 @@ export function usePartnersData() {
   return data.partners;
 }
 
+export function useNewsletterData() {
+  return data.newsletter;
+}
+
 export function useFooterData() {
   return data.footer;
 }

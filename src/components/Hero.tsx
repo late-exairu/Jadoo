@@ -18,7 +18,7 @@ export default function Hero() {
               {hero.title}
             </h1>
             <h2
-              className="text-text-dark [&>span]:after:-translate-x-3/7 mb-6 font-serif text-5xl leading-[1.06] tracking-[-0.04em] md:text-6xl lg:mb-8 lg:text-7xl xl:text-[84px] [&>span]:relative [&>span]:z-10 [&>span]:after:absolute [&>span]:after:bottom-[15%] [&>span]:after:left-1/2 [&>span]:after:-z-10 [&>span]:after:h-[12%] [&>span]:after:w-[140%] [&>span]:after:bg-[url('./underline.svg')] [&>span]:after:bg-center [&>span]:after:bg-no-repeat [&>span]:after:content-['']"
+              className="text-text-dark [&>span]:after:-translate-x-3/7 mb-6 font-serif text-5xl leading-[1.06] tracking-[-0.04em] md:text-6xl lg:mb-8 lg:text-7xl xl:text-[84px] [&>span]:relative [&>span]:z-10 [&>span]:after:absolute [&>span]:after:bottom-[15%] [&>span]:after:left-1/2 [&>span]:after:-z-10 [&>span]:after:h-[12%] [&>span]:after:w-[140%] [&>span]:after:bg-[url('/underline.svg')] [&>span]:after:bg-center [&>span]:after:bg-no-repeat [&>span]:after:content-['']"
               dangerouslySetInnerHTML={{ __html: hero.subtitle }}
             />
             <p className="mb-8 max-w-lg leading-loose text-gray-700 lg:text-base">

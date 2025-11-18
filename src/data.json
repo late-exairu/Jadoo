@@ -227,6 +227,11 @@
       }
     ]
   },
+  "newsletter": {
+    "title": "Subscribe to get information, latest news and other interesting offers about Jadoo",
+    "placeholder": "Your email",
+    "button": "Subscribe"
+  },
   "footer": {
     "description": "Discover our app",
     "sections": [
@@ -298,11 +303,6 @@
         "href": "https://twitter.com/jadoo",
         "icon": "xitter"
       }
-    ],
-    "newsletter": {
-      "title": "Subscribe to get information, latest news and other interesting offers about Jadoo",
-      "placeholder": "Your email",
-      "button": "Subscribe"
-    }
+    ]
   }
 }
