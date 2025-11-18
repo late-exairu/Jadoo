@@ -17,7 +17,7 @@ export default function Newsletter() {
           />
 
           <div className="relative mx-auto max-w-4xl text-center">
-            <h3 className="text-text text-2xl font-semibold leading-relaxed md:text-3xl lg:text-[33px]">
+            <h3 className="text-text text-xl font-semibold leading-relaxed md:text-2xl lg:text-[33px]">
               {newsletter.title}
             </h3>
 
@@ -29,7 +29,7 @@ export default function Newsletter() {
                 type="email"
                 id="newsletter-email"
                 placeholder="Your email"
-                className="text-text-dark h-15 placeholder-text focus:outline-text-dark bg-left-4 bg-size-[21px] bg-position-[30px_center] w-full rounded-lg bg-white bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyMSAxOCI+PHBhdGggc3Ryb2tlPSIjMzk0MjVkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Im00IDYgNS40IDQuMDVhMSAxIDAgMCAwIDEuMiAwTDE2IDYiLz48cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMTciIHg9Ii41IiB5PSIuNSIgc3Ryb2tlPSIjMzk0MjVkIiByeD0iNC41Ii8+PC9zdmc+')] bg-no-repeat px-16 py-3 font-sans font-medium focus:outline-2 md:h-[68px] md:w-auto md:flex-1"
+                className="text-text-dark h-15 placeholder-text focus:outline-text-dark bg-left-4 bg-size-[21px] bg-position-[30px_center] w-full rounded-lg bg-white bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyMSAxOCI+PHBhdGggc3Ryb2tlPSIjMzk0MjVkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Im00IDYgNS40IDQuMDVhMSAxIDAgMCAwIDEuMiAwTDE2IDYiLz48cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMTciIHg9Ii41IiB5PSIuNSIgc3Ryb2tlPSIjMzk0MjVkIiByeD0iNC41Ii8+PC9zdmc+')] bg-no-repeat p-3 pl-16 font-sans font-medium focus:outline-2 md:h-[68px] md:w-auto md:flex-1"
               />
               <Button
                 type="submit"
