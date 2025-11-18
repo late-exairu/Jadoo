@@ -34,6 +34,7 @@ const buttonVariants = cva(
         none: "px-0 py-0",
         sm: "h-[30px] rounded-sm px-3 md:h-[40px] md:rounded-md md:px-5",
         md: "h-[50px] rounded-lg px-4 py-2 md:h-[60px] md:rounded-[12px] md:px-[26px]",
+        lg: "h-[60px] rounded-lg px-6 py-3 md:h-[68px] md:rounded-[12px] md:px-[32px]",
       },
     },
     defaultVariants: {

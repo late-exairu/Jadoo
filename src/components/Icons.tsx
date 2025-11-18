@@ -359,6 +359,76 @@ siH/S+eckl27zpbdetvu/aY/8JFKILk2UmA381NqneoslO9jXY2JWZOFgpMdfU1NPekzbZwp5Z3Kp25l
     ),
   },
 
+  facebook: {
+    viewBox: "0 0 6 13",
+    content: (
+      <path
+        fillRule="evenodd"
+        d="M5.537 2.244a3.5 3.5 0 0 0-1.024-.168c-.416 0-1.312.287-1.312.843v1.334h2.128v2.244H3.201v6.194H1.056V6.497H0V4.253h1.056V3.122C1.056 1.418 1.792 0 3.57 0c.608 0 1.696.034 2.288.253z"
+        clipRule="evenodd"
+      />
+    ),
+  },
+
+  instagram: {
+    viewBox: "0 0 16 16",
+    content: (
+      <>
+        <g clipPath="url(#a)">
+          <path d="M13.656 0H2.344A2.347 2.347 0 0 0 0 2.344v11.312A2.346 2.346 0 0 0 2.344 16h11.312A2.346 2.346 0 0 0 16 13.656V2.344A2.346 2.346 0 0 0 13.656 0m1.406 13.656c0 .776-.63 1.406-1.406 1.406H2.344c-.776 0-1.406-.63-1.406-1.406V2.344c0-.776.63-1.406 1.406-1.406h11.312c.776 0 1.406.63 1.406 1.406z" />
+          <path d="M13.156 1.906a.939.939 0 0 0 0 1.875.939.939 0 0 0 0-1.875M8 3.781A4.223 4.223 0 0 0 3.781 8 4.224 4.224 0 0 0 8 12.219 4.224 4.224 0 0 0 12.219 8 4.224 4.224 0 0 0 8 3.781m0 7.5A3.285 3.285 0 0 1 4.719 8 3.285 3.285 0 0 1 8 4.719 3.285 3.285 0 0 1 11.281 8 3.285 3.285 0 0 1 8 11.281" />
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path d="M0 0h16v16H0z" />
+          </clipPath>
+        </defs>
+      </>
+    ),
+  },
+
+  xitter: {
+    viewBox: "0 0 300 271",
+    content: (
+      <path d="M236 0h46L181 115l118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123L-1.1 0h94.9l65.5 86.6zm-16.1 244h25.5L80.4 26H53z" />
+    ),
+  },
+
+  mail: {
+    viewBox: "0 0 21 18",
+    content: (
+      <>
+        <path
+          d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
+          stroke="#39425D"
+          stroke-linecap="round"
+        />
+        <rect
+          x="0.5"
+          y="0.5"
+          width="20"
+          height="17"
+          rx="4.5"
+          stroke="#39425D"
+        />
+      </>
+    ),
+  },
+
+  rings: {
+    viewBox: "0 0 285 291",
+    content: (
+      <g stroke="#6246e5" opacity=".1">
+        <circle cx="177.319" cy="195.537" r="91.803" />
+        <circle cx="170.032" cy="185.821" r="102.734" />
+        <circle cx="163.96" cy="177.927" r="112.45" />
+        <circle cx="157.887" cy="166.389" r="120.952" />
+        <circle cx="152.118" cy="155.155" r="129.15" />
+        <circle cx="142.402" cy="142.402" r="141.902" />
+      </g>
+    ),
+  },
+
   btnGooglePlay: {
     viewBox: "0 0 79 20",
     content: (
@@ -398,41 +468,6 @@ siH/S+eckl27zpbdetvu/aY/8JFKILk2UmA381NqneoslO9jXY2JWZOFgpMdfU1NPekzbZwp5Z3Kp25l
     ),
   },
 
-  facebook: {
-    viewBox: "0 0 6 13",
-    content: (
-      <path
-        fillRule="evenodd"
-        d="M5.537 2.244a3.5 3.5 0 0 0-1.024-.168c-.416 0-1.312.287-1.312.843v1.334h2.128v2.244H3.201v6.194H1.056V6.497H0V4.253h1.056V3.122C1.056 1.418 1.792 0 3.57 0c.608 0 1.696.034 2.288.253z"
-        clipRule="evenodd"
-      />
-    ),
-  },
-
-  instagram: {
-    viewBox: "0 0 16 16",
-    content: (
-      <>
-        <g clipPath="url(#a)">
-          <path d="M13.656 0H2.344A2.347 2.347 0 0 0 0 2.344v11.312A2.346 2.346 0 0 0 2.344 16h11.312A2.346 2.346 0 0 0 16 13.656V2.344A2.346 2.346 0 0 0 13.656 0m1.406 13.656c0 .776-.63 1.406-1.406 1.406H2.344c-.776 0-1.406-.63-1.406-1.406V2.344c0-.776.63-1.406 1.406-1.406h11.312c.776 0 1.406.63 1.406 1.406z" />
-          <path d="M13.156 1.906a.939.939 0 0 0 0 1.875.939.939 0 0 0 0-1.875M8 3.781A4.223 4.223 0 0 0 3.781 8 4.224 4.224 0 0 0 8 12.219 4.224 4.224 0 0 0 12.219 8 4.224 4.224 0 0 0 8 3.781m0 7.5A3.285 3.285 0 0 1 4.719 8 3.285 3.285 0 0 1 8 4.719 3.285 3.285 0 0 1 11.281 8 3.285 3.285 0 0 1 8 11.281" />
-        </g>
-        <defs>
-          <clipPath id="a">
-            <path d="M0 0h16v16H0z" />
-          </clipPath>
-        </defs>
-      </>
-    ),
-  },
-
-  xitter: {
-    viewBox: "0 0 300 271",
-    content: (
-      <path d="M236 0h46L181 115l118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123L-1.1 0h94.9l65.5 86.6zm-16.1 244h25.5L80.4 26H53z" />
-    ),
-  },
-
   btnAppleStore: {
     viewBox: "0 0 74 18",
     content: (
@@ -448,6 +483,7 @@ export default function Icons({
   name,
   size = 24,
   className = "",
+  fill = "none",
   id = "",
   color = "currentColor",
   ...props
@@ -467,6 +503,7 @@ export default function Icons({
       width={size}
       height={size}
       id={id}
+      fill={fill}
       viewBox={icon.viewBox}
       className={className}
       style={{ color }}
@@ -537,6 +574,12 @@ export const InstagramIcon = (props: Omit<SvgProps, "name">) => (
 );
 export const XitterIcon = (props: Omit<SvgProps, "name">) => (
   <Icons name="xitter" {...props} />
+);
+export const MailIcon = (props: Omit<SvgProps, "name">) => (
+  <Icons name="mail" {...props} />
+);
+export const RingsImg = (props: Omit<SvgProps, "name">) => (
+  <Icons name="rings" {...props} />
 );
 export const BtnGooglePlay = (props: Omit<SvgProps, "name">) => (
   <Icons name="btnGooglePlay" {...props} />

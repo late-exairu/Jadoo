@@ -6,6 +6,7 @@ import Destinations from "@/components/Destinations";
 import Booking from "@/components/Booking";
 import Testimonials from "@/components/Testimonials";
 import Companies from "@/components/Companies";
+import Newsletter from "@/components/Newsletter";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Testimonials />
         <Companies />
 
-        {/*<Newsletter /> */}
+        <Newsletter />
       </main>
 
       <Footer />
