@@ -16,6 +16,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        none: "",
         primary:
           "bg-yellow hover:bg-yellow/90 text-white shadow-[0px_15px_35px_0px_#F1A50126]",
         secondary:
@@ -31,7 +32,7 @@ const buttonVariants = cva(
         link: "text-orange underline-offset-4 hover:underline",
       },
       size: {
-        none: "px-0 py-0",
+        none: "",
         sm: "h-[30px] rounded-sm px-3 md:h-[40px] md:rounded-md md:px-5",
         md: "h-[50px] rounded-lg px-4 py-2 md:h-[60px] md:rounded-[12px] md:px-[26px]",
         lg: "h-[60px] rounded-lg px-6 py-3 md:h-[68px] md:rounded-[12px] md:px-[32px]",

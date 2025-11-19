@@ -30,8 +30,16 @@ export default function Hero() {
                 {hero.buttons.primary.text}
               </Button>
 
-              <Button href={hero.buttons.secondary.href} variant="ghost">
-                <PlayIcon size={54} className="mr-2" />
+              <Button
+                href={hero.buttons.secondary.href}
+                variant="none"
+                size="none"
+                className="[&:hover_circle]:fill-yellow pr-5"
+              >
+                <PlayIcon
+                  size={54}
+                  className="mr-2 rounded-full shadow-[0px_15px_35px_0px_#F1A50126] [&>circle]:transition-[fill] [&>circle]:duration-200 [&>circle]:ease-in-out"
+                />
                 {hero.buttons.secondary.text}
               </Button>
             </div>

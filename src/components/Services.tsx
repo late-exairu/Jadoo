@@ -41,8 +41,8 @@ export default function Services() {
     ),
     gear: (
       <GearIcon
-        size={50}
-        className="relative z-10 will-change-transform [&+.recticon]:bottom-8 [&+.recticon]:left-1/2"
+        size={54}
+        className="relative z-10 animate-[rotate_1s_ease-in-out_infinite] will-change-transform [&+.recticon]:bottom-8 [&+.recticon]:left-1/2"
       />
     ),
   };
