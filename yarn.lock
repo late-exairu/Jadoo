@@ -927,6 +927,11 @@ baseline-browser-mapping@^2.8.19:
   resolved "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.8.25.tgz"
   integrity sha512-2NovHVesVF5TXefsGX1yzx1xgr7+m9JQenvz6FQY3qd+YXkKkYiv+vTCc7OriP9mcDZpTC5mAOYN4ocd29+erA==
 
+baseline-browser-mapping@^2.9.12:
+  version "2.9.12"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.9.12.tgz#fbed5f37edf24b708e6e0b1fb26c70982a577dfc"
+  integrity sha512-Mij6Lij93pTAIsSYy5cyBQ975Qh9uLEc5rwGTpomiZeXZL9yIS6uORJakb3ScHgfs0serMMfIbXzokPMuEiRyw==
+
 brace-expansion@^1.1.7:
   version "1.1.12"
   resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.12.tgz"
