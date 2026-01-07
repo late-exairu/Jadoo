@@ -182,24 +182,24 @@
     "items": [
       {
         "id": 1,
-        "name": "Mike taylor",
-        "location": "Lahore, Pakistan",
-        "text": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
-        "avatar": "./images/mike.jpg"
+        "name": "Mike Taylor",
+        "location": "Founder of MT Company",
+        "text": "Jadoo transformed how I plan business trips! The 3-step booking process is incredibly intuitive, and I found amazing flight deals to Rome last month. Highly recommend for both leisure and business travel.",
+        "avatar": "./images/feedback/mike_taylor.png"
       },
       {
         "id": 2,
         "name": "Chris Thomas",
         "location": "CEO of Red Button",
-        "text": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
-        "avatar": "./images/chris.jpg"
+        "text": "I've tried many booking platforms. Jadoo stands out with its seamless user experience and competitive pricing. Booked a 12-day London trip through them and saved over $800 compared to other sites.",
+        "avatar": "./images/feedback/chris_thomas.png"
       },
       {
         "id": 3,
         "name": "Sara Smith",
         "location": "Designer at Creativio",
-        "text": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
-        "avatar": "./images/sara.jpg"
+        "text": "The destination recommendations were spot-on, and the local events feature helped us discover amazing experiences we wouldn't have found otherwise. The whole booking took less than 10 minutes!",
+        "avatar": "./images/feedback/sara_smith.png"
       }
     ]
   },

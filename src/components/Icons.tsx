@@ -423,6 +423,18 @@ const svgIcons = {
     ),
   },
 
+  navArrow: {
+    viewBox: "0 0 16 10",
+    content: (
+      <path
+        stroke="#3e2e4d"
+        stroke-linecap="round"
+        stroke-width="2"
+        d="m1 1 7 7 7-7"
+      />
+    ),
+  },
+
   btnGooglePlay: {
     viewBox: "0 0 79 20",
     content: (
@@ -574,6 +586,9 @@ export const MailIcon = (props: Omit<SvgProps, "name">) => (
 );
 export const RingsImg = (props: Omit<SvgProps, "name">) => (
   <Icons name="rings" {...props} />
+);
+export const NavArrowIcon = (props: Omit<SvgProps, "name">) => (
+  <Icons name="navArrow" {...props} />
 );
 export const BtnGooglePlay = (props: Omit<SvgProps, "name">) => (
   <Icons name="btnGooglePlay" {...props} />
