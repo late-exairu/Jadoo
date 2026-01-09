@@ -435,6 +435,13 @@ const svgIcons = {
     ),
   },
 
+  newsletterArrow: {
+    viewBox: "0 0 46 39",
+    content: (
+      <path d="M45.43 2.1c.86 1.5.74 3.27-.3 4.64L22.05 36.85a4.18 4.18 0 0 1-4.12 1.56q-.57-.11-1.1-.37-.52-.26-.95-.66-.42-.39-.73-.89-.3-.5-.45-1.07l-3.43-12.13-.35-1.28-.92-.93-8.8-9.03a4.13 4.13 0 0 1-.96-4.3q.18-.55.51-1.03.34-.48.79-.85t.99-.6 1.11-.3L41.25.04c1.72-.23 3.31.56 4.18 2.06M23.22 13.45 10 21.08l.92.93.35 1.28 13.23-7.64c.61-.35.81-1.13.46-1.74a1.27 1.27 0 0 0-1.74-.46" />
+    ),
+  },
+
   btnGooglePlay: {
     viewBox: "0 0 79 20",
     content: (
@@ -589,6 +596,9 @@ export const RingsImg = (props: Omit<SvgProps, "name">) => (
 );
 export const NavArrowIcon = (props: Omit<SvgProps, "name">) => (
   <Icons name="navArrow" {...props} />
+);
+export const NewsletterArrowIcon = (props: Omit<SvgProps, "name">) => (
+  <Icons name="newsletterArrow" {...props} />
 );
 export const BtnGooglePlay = (props: Omit<SvgProps, "name">) => (
   <Icons name="btnGooglePlay" {...props} />
