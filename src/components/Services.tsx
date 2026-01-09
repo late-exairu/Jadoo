@@ -2,6 +2,7 @@ import { useServicesData } from "@/hooks/useData";
 import Container from "@/components/Container";
 import TitleSmall from "@/components/TitleSmall";
 import TitleBig from "@/components/TitleBig";
+import CagePlus from "@/components/CagePlus";
 import {
   SatelliteIcon,
   PlaneIcon,
@@ -49,7 +50,8 @@ export default function Services() {
 
   return (
     <section>
-      <Container className="">
+      <Container className="relative">
+        <CagePlus className="absolute -right-10 top-5 -z-10 size-[100px] md:-right-5 md:top-8 md:size-[158px]" />
         <TitleSmall className="text-center uppercase">
           {services.title}
         </TitleSmall>

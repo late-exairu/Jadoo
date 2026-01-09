@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import CagePlus from "@/components/CagePlus";
 import { useNewsletterData } from "@/hooks/useData";
 import { RingsImg, NewsletterArrowIcon } from "@/components/Icons";
 import Button from "./Button";
@@ -18,6 +19,8 @@ export default function Newsletter() {
               className="relative top-0.5 h-6 w-8 md:top-1 md:h-8 md:w-10"
             />
           </div>
+
+          <CagePlus className="md:-right-25 -bottom-30 absolute -right-20 -z-10 size-[100px] md:-bottom-16 md:size-[158px]" />
           <div className="relative overflow-clip rounded-[20px] rounded-tl-[80px] bg-[#f9f7fe] bg-no-repeat px-6 py-10 md:rounded-tl-[130px] md:px-12 lg:px-24 lg:py-20">
             <RingsImg size={290} className="absolute -right-20 -top-5" />
             <RingsImg
